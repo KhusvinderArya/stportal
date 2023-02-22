@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: large;
+    color: yellowgreen;
+}
+
+.nav_bar {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    width: max-content;
+    position: fixed;
+    box-shadow: 0px 7px 15px gray;
+    /* box-shadow: 0 8px 6px -6px black; */
+    border-bottom-left-radius: 50px 20px;
+    border-bottom-right-radius: 50px 20px;
+}
+
+.nav_list a {
+    margin-left: 15px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    /* min-width:max-content ; */
+}
+
+ul ul {
+    font-size: 18px;
+}
+
+ul li {
+    padding: 0px 50px;
+    /* border: 2px solid red; */
+}
+
+.sub_list {
+    display: none;
+    /* visibility: hidden; */
+}
+
+#st_port:hover {
+    color: yellowgreen;
+}
+
+#st_port:hover+.sub_list {
+    display: block;
+    color: red;
+    cursor: pointer;
+
+}
+
+ul li i {
+    color: #555;
+}
+
+ul li button {
+    width: 100px;
+    height: 30px;
+    background-color: yellowgreen;
+    color: black;
+    /* border: 10px solid red; */
+    margin-left: 470px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#st_port {
+    color: black;
+}
+
+ul li button:hover {
+    background-color: aquamarine;
+}
+
+#content {
+    padding: 50px 450px;
+    /* width: max-content; */
+    /* background-color: aliceblue; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    margin-left: 600px;
+    padding: 20px;
+    border: 2px solid black;
+    width: max-content;
+    background-color: aqua;
+    border-radius: 20px;
+    background: transparent;
+
+}
+
+label {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    display: inline-block;
+    color: #555;
+    font-weight: 500;
+}
+
+#login_head {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #555;
+    font-size: larger;
+}
+
+#login_form input {
+    height: 20px;
+    font-size: larger;
+    color: #555;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+#body {
+    filter: blur(2px);
+}
+
+.active {
+    color: purple;
+}
+
+.sub_menu_1 {
+    display: none;
+
+}
+.sub_menu_1 ul li{
+    margin-bottom: 5px;
+}
+
+.nav_list li:hover .sub_menu_1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(19, 135, 135);
+    /* margin-top: 15px; */
+    margin-left: -15px;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+.nav_list li:hover .sub_menu_1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px dotted #555;
+    background: transparent;
+}
+.nav_list li:hover .sub_menu_1 ul li:hover{
+    background-color: #555;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.course .sub_menu_2{
+    display: none;
+}
+.course:hover .sub_menu_2{
+    display: block;
+    position: absolute;
+    background-color: rgb(19, 135, 135);
+    /* margin-top: 15px; */
+    margin-left: -15px;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+.course:hover .sub_menu_2 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom:1px dotted #555;
+    background: transparent;   
+}
+.course:hover .sub_menu_2 ul li:hover{
+    background-color: #555;
+    border-radius: 20px;
+    text-align: left;   
+}
+.about_content h1{
+    color: white;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.about_content h1 p{
+    color: white;
+    font-size: larger;
+    text-decoration: underline;
+}
+.message h2{
+    color: white;
+}
+.message p{
+    color: black;
+}
+.faculty_message{
+    /* padding: 0px 200px; */
+    margin-top: 100px;
+}
+.message{
+    height: 200px;
+    border: 2px solid red;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.img_cont img{
+    height: 150px;
+    width: 100px;
+    border-radius:40px;
+    
+}
+.img_cont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+span{
+    height: max-content;
+    text-decoration: underline;
+    color: #555;
+    font-weight: 500;
+    font-weight: bolder;
+}
+.main_content{
+    display: flex;
+    gap: 100px;
+    padding: 0px 50px;
+}
+.our_mission{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our_mission p{
+    color: red;
+}
+.our_mission h1{
+    color: blue;
+    text-decoration: underline;
+}
+
